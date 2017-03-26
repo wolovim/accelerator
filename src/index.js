@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Root from './Root';
+import Root from './containers/Root';
 import configureStore from './store/configureStore';
-import './index.css';
+
+import './assets/stylesheets/index.css';
 
 const store = configureStore();
 
