@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.0",
     "node-sass": "^4.5.1",
     "npm-run-all": "^4.0.2",
     "react-scripts": "0.9.5"
@@ -15,12 +17,19 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "build-css": "node-sass src/ -o src/",
-    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive",
-    "start-js": "react-scripts start",
-    "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
+    "build-css": "node-sass src/ -o src/",
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged",
+    "start": "npm-run-all -p watch-css start-js",
+    "start-js": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "watch-css": "npm run build-css && node-sass src/ -o src/ --watch --recursive"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --single-quote --trailing-comma es5 --write '{app,__{tests,mocks}__}/**/*.js'",
+      "git add"
+    ]
   }
 }
