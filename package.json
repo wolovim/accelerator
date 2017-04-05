@@ -1,5 +1,5 @@
 {
-  "name": "redux-starter-unejected",
+  "name": "accelerator",
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
@@ -14,8 +14,10 @@
     "react-dom": "^15.4.2",
     "react-md": "^1.0.11",
     "react-redux": "^5.0.3",
+    "react-router-dom": "^4.0.0",
     "redux": "^3.6.0",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "webfontloader": "^1.6.27"
   },
   "scripts": {
     "build": "react-scripts build",
