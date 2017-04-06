@@ -1,16 +1,24 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import logo from '../assets/images/logo.svg';
 import Button from 'react-md/lib/Buttons';
 import Toolbar from 'react-md/lib/Toolbars';
-import { Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { Route, Switch, withRouter } from 'react-router-dom';
 
-import About from '../components/About';
+import { addItem } from '../actions/items';
+import ListPage from '../components/List';
 import Home from '../components/Home';
 import '../assets/stylesheets/App.scss';
 
 class App extends Component {
   redirectTo(route) {
-    return this.context.router.history.push(route);
+    // In react-router v4, this is a programmatic way to redirect a user.
+    // Note that 'history' is available thanks to 'withRouter'.
+    return this.props.history.push(route);
+  }
+
+  handleAddItem(text) {
+    this.props.dispatch(addItem(text));
   }
 
   render() {
@@ -18,11 +26,12 @@ class App extends Component {
       <Button icon key="home" onClick={() => this.redirectTo('/')}>
         home
       </Button>,
-      <Button icon key="about" onClick={() => this.redirectTo('/about')}>
-        library_books
+      <Button icon key="list" onClick={() => this.redirectTo('/list')}>
+        list
       </Button>,
     ];
 
+    console.log('this.props.items', this.props.items);
     return (
       <div className="app">
         <Toolbar
@@ -37,15 +46,29 @@ class App extends Component {
         </div>
 
         <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
+        <Route
+          path="/list"
+          component={() => {
+            return (
+              <ListPage
+                items={this.props.items}
+                addItem={text => this.handleAddItem(text)}
+              />
+            );
+          }}
+        />
       </div>
     );
   }
+}
 
-  // if accessing context is used, contextTypes must be specified
-  static contextTypes = {
-    router: PropTypes.object,
+function mapStateToProps(state) {
+  return {
+    items: state.items.list,
+    router: state.router,
   };
 }
 
-export default App;
+// 'withRouter' makes router state available to the wrapped component.
+// See: https://reacttraining.com/react-router/web/api/withRouter
+export default connect(mapStateToProps)(withRouter(App));
