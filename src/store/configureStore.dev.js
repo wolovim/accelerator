@@ -1,12 +1,9 @@
-import createBrowserHistory from 'history/createBrowserHistory';
 import { routerMiddleware } from 'react-router-redux';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import root from '../reducers/';
 
-export const history = createBrowserHistory();
-
-export default function configureStore() {
+export default function configureStore(history) {
   const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ||
     compose;
   const enhancer = composeEnhancers(

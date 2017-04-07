@@ -3,7 +3,7 @@ import logo from '../assets/images/logo.svg';
 import Button from 'react-md/lib/Buttons';
 import Toolbar from 'react-md/lib/Toolbars';
 import { connect } from 'react-redux';
-import { Route, Switch, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router-dom';
 
 import { addItem } from '../actions/items';
 import ListPage from '../components/List';
