@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router-dom';
 
 import { addItem } from '../actions/items';
-import ListPage from '../components/List';
+import ListPage from '../components/ListPage';
 import Home from '../components/Home';
 import '../assets/stylesheets/App.scss';
 
@@ -64,7 +64,6 @@ class App extends Component {
 function mapStateToProps(state) {
   return {
     items: state.items.list,
-    router: state.router,
   };
 }
 
