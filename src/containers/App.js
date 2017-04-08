@@ -31,7 +31,6 @@ class App extends Component {
       </Button>,
     ];
 
-    console.log('this.props.items', this.props.items);
     return (
       <div className="app">
         <Toolbar
