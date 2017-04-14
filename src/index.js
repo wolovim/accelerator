@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import Root from './containers/Root';
-import configureStore from './store/configureStore';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
-import App from './containers/App';
 
 // react-md utilizes Google's material icons
 import WebFont from 'webfontloader';
 WebFont.load({ google: { families: ['Material Icons'] } });
+
+import App from './containers/App';
+import configureStore from './store/configureStore';
 
 import './assets/stylesheets/index.scss';
 
