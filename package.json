@@ -4,8 +4,11 @@
   "private": true,
   "devDependencies": {
     "custom-react-scripts": "^0.0.23",
+    "enzyme": "^2.8.2",
     "husky": "^0.13.3",
-    "lint-staged": "^3.4.0"
+    "lint-staged": "^3.4.0",
+    "react-addons-test-utils": "^15.5.1",
+    "react-test-renderer": "^15.5.4"
   },
   "dependencies": {
     "react": "^15.5.4",

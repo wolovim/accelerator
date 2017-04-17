@@ -10,7 +10,7 @@ import ListPage from '../components/ListPage';
 import Home from '../components/Home';
 import '../assets/stylesheets/App.scss';
 
-class App extends Component {
+export class App extends Component {
   redirectTo(route) {
     // In react-router v4, this is a programmatic way to redirect a user.
     // Note that 'history' is available thanks to 'withRouter'.
