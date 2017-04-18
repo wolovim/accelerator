@@ -3,7 +3,8 @@ import logo from '../assets/images/logo.svg';
 import Button from 'react-md/lib/Buttons';
 import Toolbar from 'react-md/lib/Toolbars';
 import { connect } from 'react-redux';
-import { Route, withRouter } from 'react-router-dom';
+import { Route, withRouter } from 'react-router';
+import { push } from 'react-router-redux';
 
 import { addItem } from '../actions/items';
 import ListPage from '../components/ListPage';
@@ -12,9 +13,11 @@ import '../assets/stylesheets/App.scss';
 
 export class App extends Component {
   redirectTo(route) {
-    // In react-router v4, this is a programmatic way to redirect a user.
-    // Note that 'history' is available thanks to 'withRouter'.
-    return this.props.history.push(route);
+    // In React Router v4, this is one way to programmatically redirect
+    // a user using react-router-redux. Other couple solutions:
+    //  1. Using `withRouter`: this.props.history.push(route);
+    //  2. Accessing context: this.context.router.history.push(route);
+    return this.props.dispatch(push(route));
   }
 
   handleAddItem(text) {
@@ -69,4 +72,4 @@ function mapStateToProps(state) {
 
 // 'withRouter' makes router state available to the wrapped component.
 // See: https://reacttraining.com/react-router/web/api/withRouter
-export default connect(mapStateToProps)(withRouter(App));
+export default withRouter(connect(mapStateToProps)(App));

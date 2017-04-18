@@ -5030,7 +5030,7 @@ react-redux@^5.0.3:
     loose-envify "^1.1.0"
     prop-types "^15.0.0"
 
-react-router-dom@^4.0.0:
+react-router-dom@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.1.1.tgz#3021ade1f2c160af97cf94e25594c5f294583025"
   dependencies:
