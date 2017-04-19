@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router';
 
@@ -34,6 +35,11 @@ export class App extends Component {
     );
   }
 }
+
+App.propTypes = {
+  dispatch: PropTypes.func,
+  items: PropTypes.array,
+};
 
 function mapStateToProps(state) {
   return {

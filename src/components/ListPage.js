@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from 'react-md/lib/Buttons';
 import Card from 'react-md/lib/Cards/Card';
 import CardText from 'react-md/lib/Cards/CardText';
@@ -59,5 +60,10 @@ class ListPage extends Component {
     );
   }
 }
+
+ListPage.propTypes = {
+  addItem: PropTypes.func,
+  items: PropTypes.array,
+};
 
 export default ListPage;

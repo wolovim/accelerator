@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import Button from 'react-md/lib/Buttons';
 import Toolbar from 'react-md/lib/Toolbars';
 import { withRouter } from 'react-router';
@@ -39,6 +40,10 @@ export class Header extends Component {
     );
   }
 }
+
+Header.propTypes = {
+  history: PropTypes.object,
+};
 
 // 'withRouter' makes router state available to the wrapped component.
 // See: https://reacttraining.com/react-router/web/api/withRouter
