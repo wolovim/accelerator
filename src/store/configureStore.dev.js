@@ -1,6 +1,7 @@
 import { routerMiddleware } from 'react-router-redux';
 import { createStore, compose, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
+
 import root from '../reducers/';
 
 export default function configureStore(history) {
