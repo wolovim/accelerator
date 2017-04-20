@@ -11,6 +11,7 @@
     "eslint-watch": "^3.1.0",
     "husky": "^0.13.3",
     "lint-staged": "^3.4.0",
+    "prettier": "^1.2.2",
     "react-addons-test-utils": "^15.5.1",
     "react-test-renderer": "^15.5.4"
   },
@@ -38,8 +39,8 @@
     "test:once": "CI=true react-scripts test --env=jsdom"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --single-quote --trailing-comma es5 --write '{app,__{tests,mocks}__}/**/*.js'",
+    "{src,__test__}/**/*.js": [
+      "prettier --single-quote --trailing-comma es5 --write",
       "git add"
     ]
   }
