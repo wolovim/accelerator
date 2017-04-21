@@ -8,8 +8,6 @@
 
 #### New dependencies? What are they used for?
 
-#### What are the relevant tickets?
-
 #### Screenshots (if appropriate)
 
 #### What gif best describes how this PR makes you feel?
