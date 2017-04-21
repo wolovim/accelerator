@@ -1,7 +1,7 @@
 import { routerReducer } from 'react-router-redux';
 import { combineReducers } from 'redux';
 
-import items from './items';
+import items from './items/reducer';
 
 const root = combineReducers({
   items,
