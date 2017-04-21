@@ -1,6 +1,6 @@
 # Accelerator
 
-A headstart for your next React + Redux application.
+A head start for your next React + Redux application.
 
 ## Features
 
