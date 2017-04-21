@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Route, withRouter } from 'react-router';
 
-import { addItem } from '../actions/items';
+import { addItem } from '../store/items/actions';
 import Header from '../components/Header';
 import ListPage from '../components/ListPage';
 import Home from '../components/Home';
