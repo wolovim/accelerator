@@ -12,6 +12,9 @@
 # compiled css files
 src/**/*.css
 
+# environment variables
+.env
+
 # misc
 .DS_Store
 npm-debug.log*
