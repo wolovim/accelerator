@@ -1,4 +1,4 @@
-import items from './items';
+import items from './reducer';
 
 describe('items reducer', () => {
   const initialState = { list: [] };
