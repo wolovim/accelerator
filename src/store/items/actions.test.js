@@ -1,4 +1,4 @@
-import { addItem } from './items';
+import { addItem } from './actions';
 
 describe('items actions', () => {
   it('handles addItem action creator', () => {
