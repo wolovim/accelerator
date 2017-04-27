@@ -1,6 +1,6 @@
 # Accelerator
 
-A headstart for your next React + Redux application.
+A head start for your next React + Redux application.
 
 ## Up and Running
 
@@ -40,7 +40,7 @@ A headstart for your next React + Redux application.
 
 * **Prettier** - [Prettier](https://github.com/prettier/prettier) is wonderful magic that formats your JavaScript code for you. It is configured (using [Husky](https://github.com/typicode/husky)) to format JavaScript code in a precommit hook. You may also choose to configure Prettier with your editor of choice.
 
-* **React Hot Loader** - 
+* **React Hot Loader** -
 [Hot loading](http://gaearon.github.io/react-hot-loader/) updates the application on code change, while maintaining the application's state. This is made possible with hot module replacement and the fact that the Redux store is produced by pure functions.
 
 * **Redux DevTools - Chrome extension** - The app is configured to allow this [Chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to display dispatched actions and state diffs.
@@ -285,7 +285,7 @@ You would need to install an ESLint plugin for your editor first.
 
 >VS Code ESLint plugin automatically detects Create React App's configuration file. So you do not need to create `eslintrc.json` at the root directory, except when you want to add your own rules. In that case, you should include CRA's config by adding this line:
 
->```js
+```js
 {
   // ...
   "extends": "react-app"
@@ -1575,17 +1575,17 @@ When you build the project, Create React App will place the `public` folder cont
 2. Install `serve` by running `npm install --save serve`.
 
 3. Add this line to `scripts` in `package.json`:
-    
+
     ```
     "now-start": "serve build/",
     ```
-    
+
 4. Run `now` from your project directory. You will see a **now.sh** URL in your output like this:
-    
+
     ```
     > Ready! https://your-project-dirname-tpspyhtdtk.now.sh (copied to clipboard)
     ```
-    
+
     Paste that URL into your browser when the build is complete, and you will see your deployed app.
 
 Details are available in [this article.](https://zeit.co/blog/now-static)
