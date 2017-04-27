@@ -2,6 +2,14 @@
 
 A headstart for your next React + Redux application.
 
+## Up and Running
+
+* Clone this repo.
+* Either blow away the `.git` directory and `git init` anew, or just change the remotes.
+* `npm start` to view the app in the browser.
+* `npm test` to run the test watch script.
+* `npm run lint:watch` to run the auxiliary linter, which checks for PropType usage, etc.
+
 ## Features
 
 ### React and Redux
