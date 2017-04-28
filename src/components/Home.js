@@ -98,17 +98,17 @@ const Home = props => {
         <ul>
           <li>
             <a href="https://github.com/prettier/prettier/">
-              prettier
+              Prettier
             </a>
             {' '}
             - JavaScript formatter; runs prior to git commit.
           </li>
           <li>
-            <a href="https://github.com/gaearon/react-hot-loader">
-              react hot loader
+            <a href="https://webpack.js.org/concepts/hot-module-replacement">
+              Hot Module Replacement (HMR)
             </a>
             {' '}
-            - updates app without losing state.
+            - updates app without refreshing or losing Redux state.
           </li>
           <li>
             <a

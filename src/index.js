@@ -30,8 +30,8 @@ function render(Component) {
 
 render(App);
 
-// In development, react hot loading updates the application when
-// changes are made, but maintains the application state.
+// In development, hot module replacement (HMR) updates the application
+// when changes are made, without having to refresh.
 if (module.hot) {
   module.hot.accept('./containers/App', () => {
     const NextApp = require('./containers/App').default;

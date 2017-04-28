@@ -40,8 +40,8 @@ A head start for your next React + Redux application.
 
 * **Prettier** - [Prettier](https://github.com/prettier/prettier) is wonderful magic that formats your JavaScript code for you. It is configured (using [Husky](https://github.com/typicode/husky)) to format JavaScript code in a precommit hook. You may also choose to configure Prettier with your editor of choice.
 
-* **React Hot Loader** -
-[Hot loading](http://gaearon.github.io/react-hot-loader/) updates the application on code change, while maintaining the application's state. This is made possible with hot module replacement and the fact that the Redux store is produced by pure functions.
+* **Hot Module Replacement (HMR)** -
+[Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement) updates the application on code change, without refreshing. Redux state is maintained.
 
 * **Redux DevTools - Chrome extension** - The app is configured to allow this [Chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to display dispatched actions and state diffs.
 
