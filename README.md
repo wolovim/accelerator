@@ -7,10 +7,11 @@ A head start for your next React + Redux application.
 * Clone this repo.
 * Either blow away the `.git` directory and `git init` anew, or just change the remotes.
 * Set up your environment variables file: `mv .env.example .env`.
-* `npm install`
-* `npm start` to view the app in the browser.
-* `npm test` to run the test watch script.
-* `npm run lint:watch` to run the auxiliary linter, which checks for PropType usage, etc.
+* `yarn install`
+  * `brew install yarn` ([or another installation](https://yarnpkg.com/en/docs/install)) if yarn is not installed
+* `yarn start` to view the app in the browser.
+* `yarn test` to run the test watch script.
+* `yarn run lint:watch` to run the auxiliary linter, which checks for PropType usage, etc.
 
 ## Features
 
