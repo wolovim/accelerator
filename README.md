@@ -6,7 +6,7 @@ A head start for your next React + Redux application.
 
 * Clone this repo.
 * Either blow away the `.git` directory and `git init` anew, or just change the remotes.
-* Set up your environment variables file: `mv .env.example .env`.
+* Set up your environment variables file: `cp .env.example .env`.
 * `yarn install`
   * `brew install yarn` ([or another installation](https://yarnpkg.com/en/docs/install)) if yarn is not installed
 * `yarn start` to view the app in the browser.
