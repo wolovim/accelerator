@@ -7,11 +7,18 @@ A head start for your next React + Redux application.
 * Clone this repo.
 * Either blow away the `.git` directory and `git init` anew, or just change the remotes.
 * Set up your environment variables file: `cp .env.example .env`.
-* `yarn install`
-  * `brew install yarn` ([or another installation](https://yarnpkg.com/en/docs/install)) if yarn is not installed
+* `yarn install`.
+  * `brew install yarn` ([or another installation](https://yarnpkg.com/en/docs/install)) if yarn is not installed.
 * `yarn start` to view the app in the browser.
 * `yarn test` to run the test watch script.
 * `yarn run lint:watch` to run the auxiliary linter, which checks for PropType usage, etc.
+
+## Deployment
+
+* **Heroku** - Use the create-react-app buildpack as described [here](https://blog.heroku.com/deploying-react-with-zero-configuration).
+  * Note: node-sass can be flaky. For most reliable results, set the config var: `heroku config:set NODE_MODULES_CACHE=false`.
+
+* **AWS (S3/CloudFront)** - Follow along with this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af).
 
 ## Features
 
@@ -47,12 +54,6 @@ A head start for your next React + Redux application.
 [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement) updates the application on code change, without refreshing. Redux state is maintained.
 
 * **Redux DevTools - Chrome extension** - The app is configured to allow this [Chrome extension](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en) to display dispatched actions and state diffs.
-
-## Deployment
-
-* **Heroku** - Use the create-react-app buildpack as described [here](https://blog.heroku.com/deploying-react-with-zero-configuration).
-
-* **AWS (S3/CloudFront)** - Follow along with this [blog post](https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af).
 
 ---
 
