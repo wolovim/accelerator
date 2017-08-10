@@ -10,6 +10,7 @@
     "eslint-plugin-react": "^6.10.3",
     "eslint-watch": "^3.1.0",
     "husky": "^0.13.3",
+    "jest-junit": "^2.1.0",
     "lint-staged": "^3.4.0",
     "prettier": "^1.2.2",
     "react-test-renderer": "^15.5.4"
@@ -38,12 +39,15 @@
     "lint": "eslint src/**/*.js",
     "lint:watch": "esw -w src/**/*.js",
     "test": "react-scripts test --env=jsdom",
-    "test:once": "CI=true react-scripts test --env=jsdom"
+    "test:once": "CI=true react-scripts test --env=jsdom --testResultsProcessor='../../jest-junit'"
   },
   "lint-staged": {
     "{src,__{test|mocks}__}/**/*.js": [
       "prettier --single-quote --trailing-comma es5 --write",
       "git add"
     ]
+  },
+  "jest-junit": {
+    "output": "./jest/test-results.xml"
   }
 }
