@@ -1,0 +1,12 @@
+test:
+  pre:
+    - npm run lint
+  override:
+    - yarn test:once
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/jest
+    - cp ./jest/test-results.xml $CIRCLE_TEST_REPORTS/jest/
+# TODO: add the repo_id (from Heartbeat) and your personal CircleCI api token
+# notify:
+#   webhooks:
+#     - url: https://heartbeat2-publisher.herokuapp.com/api/WebHookParse?repo_id=<id>&circle_ci_token=<personal_token>
