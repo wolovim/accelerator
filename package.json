@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
-    "custom-react-scripts": "^0.0.23",
+    "custom-react-scripts": "^0.2.1",
     "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
     "eslint-plugin-babel": "^4.1.1",
@@ -25,7 +25,7 @@
     "react-redux": "^5.0.3",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
-    "react-router-redux": "next",
+    "react-router-redux": "^5.0.0-alpha.8",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "webfontloader": "^1.6.27"
