@@ -1,3 +1,5 @@
+_Note: [create-react-app v2](https://reactjs.org/blog/2018/10/01/create-react-app-v2.html) is an improvement over this repo in most ways. Consider starting there and using this as a reference Redux implementation._
+
 # Accelerator
 
 A head start for your next React + Redux application.
